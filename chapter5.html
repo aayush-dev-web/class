@@ -1,8 +1,610 @@
 <html>
 <head>
-    <title></title>
+<title>Chapter 5 - Programming Concepts and C Programming</title>
 </head>
-<body>
-    
+<body bgcolor="#fdf6e3" text="#000000">
+
+<center>
+<h1>CHAPTER 5</h1>
+<h1>PROGRAMMING CONCEPTS AND C PROGRAMMING</h1>
+<hr width="80%" size="3" color="black">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/C_Programming_Language.svg" width="150" alt="Logo representing the C programming language">
+</center>
+
+<h2>5.1 Programming Concept</h2>
+
+<h3>Introduction to Programming Languages</h3>
+<p>A <b>programming language</b> is a set of rules and symbols used to write instructions that a
+computer can understand and execute.</p>
+
+<table border="1" cellpadding="6" cellspacing="0" width="95%">
+<tr bgcolor="#d2b48c"><th>Type</th><th>Description</th><th>Example</th></tr>
+<tr><td><b>Low-level Language</b></td><td>Close to machine code, hard for humans to understand but fast for the machine (Machine Language, Assembly Language)</td><td>Assembly Language</td></tr>
+<tr bgcolor="#f5f5dc"><td><b>High-level Language</b></td><td>Close to human language (English-like), easy to write, read and maintain</td><td>C, C++, Java, Python</td></tr>
+<tr><td><b>4GL (Fourth Generation Language)</b></td><td>Very high level languages designed for a specific purpose such as database queries, requiring fewer lines of code</td><td>SQL</td></tr>
+</table>
+
+<p><b>Translators (Language Processors):</b></p>
+<table border="1" cellpadding="6" cellspacing="0" width="95%">
+<tr bgcolor="#d2b48c"><th>Term</th><th>Description</th></tr>
+<tr><td><b>Compiler</b></td><td>Translates the entire high-level source code into machine code at once before execution</td></tr>
+<tr bgcolor="#f5f5dc"><td><b>Interpreter</b></td><td>Translates and executes source code line by line</td></tr>
+<tr><td><b>Assembler</b></td><td>Translates assembly language code into machine code</td></tr>
+</table>
+
+<p><b>Types of Errors:</b></p>
+<table border="1" cellpadding="6" cellspacing="0" width="95%">
+<tr bgcolor="#d2b48c"><th>Error Type</th><th>Description</th></tr>
+<tr><td><b>Syntax Error</b></td><td>Occurs when the rules (grammar) of the programming language are violated, e.g. missing semicolon</td></tr>
+<tr bgcolor="#f5f5dc"><td><b>Semantic Error</b></td><td>Occurs when a statement is syntactically correct but does not do what was intended</td></tr>
+<tr><td><b>Runtime Error</b></td><td>Occurs while the program is running, e.g. division by zero</td></tr>
+</table>
+
+<h3>Program Control Structures</h3>
+<table border="1" cellpadding="6" cellspacing="0" width="95%">
+<tr bgcolor="#d2b48c"><th>Structure</th><th>Description</th></tr>
+<tr><td><b>Sequence</b></td><td>Instructions are executed one after another in the order they are written</td></tr>
+<tr bgcolor="#f5f5dc"><td><b>Selection</b></td><td>A decision is made and one of two or more paths is chosen (if, if-else, switch)</td></tr>
+<tr><td><b>Iteration</b></td><td>A set of instructions is repeated as long as a condition is true (loops)</td></tr>
+</table>
+
+<p><b>Algorithm:</b> A step-by-step set of instructions written in plain language to solve a
+problem.</p>
+<p><b>Example Algorithm - to find the sum of two numbers:</b></p>
+<pre>
+Step 1: Start
+Step 2: Read A and B
+Step 3: Sum = A + B
+Step 4: Print Sum
+Step 5: Stop
+</pre>
+
+<p><b>Flowchart:</b> A diagrammatic representation of an algorithm using standard symbols
+(Oval for start/stop, Parallelogram for input/output, Rectangle for process, Diamond for
+decision).</p>
+
+<center>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/LampFlowchart.svg" width="300" alt="Example flowchart diagram showing decision boxes, process boxes and arrows used to represent an algorithm">
+</center>
+
+<p><b>Pseudocode:</b> An informal, English-like way of describing an algorithm without following
+the strict syntax of any programming language.</p>
+<pre>
+BEGIN
+  READ A, B
+  SUM = A + B
+  PRINT SUM
+END
+</pre>
+
+<h3>Data Representation</h3>
+<table border="1" cellpadding="6" cellspacing="0" width="95%">
+<tr bgcolor="#d2b48c"><th>Term</th><th>Description</th></tr>
+<tr><td><b>Binary</b></td><td>Data representation using only 0s and 1s, the basic language of computers</td></tr>
+<tr bgcolor="#f5f5dc"><td><b>BCD (Binary Coded Decimal)</b></td><td>A coding system where each decimal digit is represented separately by a 4-bit binary code</td></tr>
+<tr><td><b>ASCII</b></td><td>American Standard Code for Information Interchange - a 7/8-bit character encoding standard used to represent text (128/256 characters)</td></tr>
+<tr bgcolor="#f5f5dc"><td><b>Unicode</b></td><td>A universal character encoding standard that can represent characters from almost all writing systems in the world using 16 or more bits</td></tr>
+</table>
+
+<hr>
+
+<h2>5.2 C Programming Language</h2>
+
+<h3>Introduction and Features of C</h3>
+<p><b>C</b> is a general-purpose, structured, high-level programming language developed by
+Dennis Ritchie in 1972 at Bell Labs.</p>
+<ul>
+<li>Simple and easy to learn</li>
+<li>Structured programming language</li>
+<li>Fast execution speed</li>
+<li>Portable - programs can run on different machines with little or no change</li>
+<li>Rich set of built-in operators and functions</li>
+<li>Forms the base for many modern languages like C++, Java, and C#</li>
+</ul>
+
+<h3>Structure of a C Program</h3>
+<pre>
+#include &lt;stdio.h&gt;      /* Preprocessor Directive */
+
+int main()               /* Main function - execution starts here */
+{
+    /* statements */
+    printf("Hello, World!");
+    return 0;
+}
+</pre>
+
+<p><b>C Preprocessor:</b> A program that processes the source code before it is compiled,
+handling directives that begin with '#' such as #include and #define.</p>
+
+<p><b>Header Files:</b> Files that contain declarations of built-in functions, included using
+#include. Example: <b>stdio.h</b> (standard input output), <b>string.h</b> (string functions).</p>
+
+<p><b>Character Set:</b> The set of valid characters that a C compiler can recognize -
+letters (A-Z, a-z), digits (0-9), special symbols (+, -, *, /, {, } etc.) and white spaces.</p>
+
+<p><b>Comments:</b> Non-executable text used to explain code, ignored by the compiler.
+Example: <code>/* this is a comment */</code> or <code>// single line comment</code></p>
+
+<p><b>Identifiers:</b> Names given to variables, functions and arrays by the programmer, e.g.
+<code>total</code>, <code>sum1</code>.</p>
+
+<p><b>Keywords:</b> Reserved words that have a special, predefined meaning in C and cannot be
+used as identifiers. Examples: <code>int, float, if, else, while, for, return</code></p>
+
+<p><b>Tokens:</b> The smallest individual units of a C program - keywords, identifiers,
+constants, strings and operators.</p>
+
+<h3>Basic Data Types</h3>
+<table border="1" cellpadding="6" cellspacing="0" width="90%">
+<tr bgcolor="#d2b48c"><th>Data Type</th><th>Description</th><th>Example</th></tr>
+<tr><td>int</td><td>Stores whole numbers</td><td>10, -5</td></tr>
+<tr bgcolor="#f5f5dc"><td>float</td><td>Stores decimal (real) numbers</td><td>3.14</td></tr>
+<tr><td>char</td><td>Stores a single character</td><td>'A'</td></tr>
+<tr bgcolor="#f5f5dc"><td>double</td><td>Stores double precision decimal numbers</td><td>3.14159265</td></tr>
+</table>
+
+<p><b>Constants:</b> Values that do not change during program execution, e.g. <code>const int
+PI = 3.14;</code></p>
+<p><b>Variables:</b> Named memory locations used to store data that can change during
+execution, e.g. <code>int age;</code></p>
+<p><b>Type Specifiers:</b> Keywords used to declare the type of a variable, such as
+<code>int, float, char, double</code>.</p>
+<p><b>Simple Statement:</b> A single instruction ending with a semicolon, e.g.
+<code>a = a + 1;</code></p>
+<p><b>Compound Statement:</b> A group of statements enclosed in curly braces { } treated as one
+block, commonly used with if, for, while.</p>
+
+<h3>Operators in C</h3>
+<table border="1" cellpadding="6" cellspacing="0" width="95%">
+<tr bgcolor="#d2b48c"><th>Operator Type</th><th>Symbols</th><th>Example</th></tr>
+<tr><td>Arithmetic</td><td>+  -  *  /  %</td><td>a + b, a % b</td></tr>
+<tr bgcolor="#f5f5dc"><td>Relational</td><td>==  !=  &gt;  &lt;  &gt;=  &lt;=</td><td>a &gt; b</td></tr>
+<tr><td>Logical</td><td>&amp;&amp;  ||  !</td><td>a &gt; 0 &amp;&amp; b &gt; 0</td></tr>
+<tr bgcolor="#f5f5dc"><td>Assignment</td><td>=  +=  -=  *=  /=</td><td>a += 5</td></tr>
+<tr><td>Unary</td><td>++  --  -</td><td>a++, --b</td></tr>
+<tr bgcolor="#f5f5dc"><td>Conditional (Ternary)</td><td>?  :</td><td>max = (a&gt;b) ? a : b;</td></tr>
+</table>
+
+<h3>Input / Output Functions</h3>
+<table border="1" cellpadding="6" cellspacing="0" width="90%">
+<tr bgcolor="#d2b48c"><th>Function</th><th>Purpose</th></tr>
+<tr><td>printf()</td><td>Displays (prints) output on the screen</td></tr>
+<tr bgcolor="#f5f5dc"><td>scanf()</td><td>Reads (accepts) input from the keyboard</td></tr>
+<tr><td>getchar()</td><td>Reads a single character from the keyboard</td></tr>
+<tr bgcolor="#f5f5dc"><td>putchar()</td><td>Displays a single character on the screen</td></tr>
+</table>
+
+<p><b>Example Program - Input and Output:</b></p>
+<pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int a, b, sum;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &amp;a, &amp;b);
+    sum = a + b;
+    printf("Sum = %d", sum);
+    return 0;
+}
+</pre>
+<p><b>Expected Output</b> (for input 10 and 20):</p>
+<pre>
+Enter two numbers: 10 20
+Sum = 30
+</pre>
+
+<hr>
+
+<h3>Selection Statements</h3>
+
+<p><b>if statement:</b></p>
+<pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int age;
+    printf("Enter your age: ");
+    scanf("%d", &amp;age);
+    if (age &gt;= 18)
+    {
+        printf("You are eligible to vote.");
+    }
+    return 0;
+}
+</pre>
+<p><b>Expected Output</b> (for input 20):</p>
+<pre>
+Enter your age: 20
+You are eligible to vote.
+</pre>
+
+<p><b>if-else statement:</b></p>
+<pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &amp;num);
+    if (num % 2 == 0)
+        printf("Even Number");
+    else
+        printf("Odd Number");
+    return 0;
+}
+</pre>
+<p><b>Expected Output</b> (for input 7):</p>
+<pre>
+Enter a number: 7
+Odd Number
+</pre>
+
+<p><b>if-else-if statement:</b></p>
+<pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int marks;
+    printf("Enter marks: ");
+    scanf("%d", &amp;marks);
+    if (marks &gt;= 80)
+        printf("Grade A");
+    else if (marks &gt;= 60)
+        printf("Grade B");
+    else if (marks &gt;= 40)
+        printf("Grade C");
+    else
+        printf("Fail");
+    return 0;
+}
+</pre>
+<p><b>Expected Output</b> (for input 85):</p>
+<pre>
+Enter marks: 85
+Grade A
+</pre>
+
+<p><b>Nested if statement:</b></p>
+<pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int a = 10, b = 20;
+    if (a &gt; 5)
+    {
+        if (b &gt; 15)
+            printf("a is greater than 5 and b is greater than 15");
+    }
+    return 0;
+}
+</pre>
+<p><b>Expected Output:</b></p>
+<pre>
+a is greater than 5 and b is greater than 15
+</pre>
+
+<p><b>switch statement:</b></p>
+<pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int day;
+    printf("Enter day number (1-7): ");
+    scanf("%d", &amp;day);
+    switch (day)
+    {
+        case 1: printf("Sunday"); break;
+        case 2: printf("Monday"); break;
+        case 3: printf("Tuesday"); break;
+        default: printf("Invalid day");
+    }
+    return 0;
+}
+</pre>
+<p><b>Expected Output</b> (for input 2):</p>
+<pre>
+Enter day number (1-7): 2
+Monday
+</pre>
+
+<hr>
+
+<h3>Iteration (Looping) Statements</h3>
+
+<p><b>while loop:</b></p>
+<pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int i = 1;
+    while (i &lt;= 5)
+    {
+        printf("%d\n", i);
+        i++;
+    }
+    return 0;
+}
+</pre>
+<p><b>Expected Output:</b></p>
+<pre>
+1
+2
+3
+4
+5
+</pre>
+
+<p><b>do-while loop:</b></p>
+<pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int i = 1;
+    do
+    {
+        printf("%d\n", i);
+        i++;
+    } while (i &lt;= 5);
+    return 0;
+}
+</pre>
+<p><b>Expected Output:</b></p>
+<pre>
+1
+2
+3
+4
+5
+</pre>
+
+<p><b>for loop:</b></p>
+<pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int i;
+    for (i = 1; i &lt;= 5; i++)
+    {
+        printf("%d\n", i);
+    }
+    return 0;
+}
+</pre>
+<p><b>Expected Output:</b></p>
+<pre>
+1
+2
+3
+4
+5
+</pre>
+
+<p><b>Nested loop:</b></p>
+<pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int i, j;
+    for (i = 1; i &lt;= 3; i++)
+    {
+        for (j = 1; j &lt;= 3; j++)
+        {
+            printf("%d ", i*j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+</pre>
+<p><b>Expected Output:</b></p>
+<pre>
+1 2 3
+2 4 6
+3 6 9
+</pre>
+
+<hr>
+
+<h3>Arrays</h3>
+<p>An <b>array</b> is a collection of elements of the same data type stored in contiguous
+memory locations and referred to by a single name.</p>
+
+<p><b>Declaration:</b> <code>int marks[5];</code> declares an array named <code>marks</code>
+that can hold 5 integers, indexed from <code>marks[0]</code> to <code>marks[4]</code>.</p>
+<p><b>Initialization:</b> <code>int marks[5] = {70, 65, 80, 90, 55};</code> declares and fills
+the array with values at the same time.</p>
+
+<p><b>One Dimensional (1D) Array:</b></p>
+<pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int marks[5] = {70, 65, 80, 90, 55};
+    int i;
+    for (i = 0; i &lt; 5; i++)
+    {
+        printf("%d\n", marks[i]);
+    }
+    return 0;
+}
+</pre>
+<p><b>Expected Output:</b></p>
+<pre>
+70
+65
+80
+90
+55
+</pre>
+
+<p><b>Two Dimensional (2D) Array:</b></p>
+<pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int a[2][2] = {{1,2},{3,4}};
+    int i, j;
+    for (i = 0; i &lt; 2; i++)
+    {
+        for (j = 0; j &lt; 2; j++)
+        {
+            printf("%d ", a[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+</pre>
+<p><b>Expected Output:</b></p>
+<pre>
+1 2
+3 4
+</pre>
+
+<p><b>Matrix Addition:</b></p>
+<pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int a[2][2] = {{1,2},{3,4}};
+    int b[2][2] = {{5,6},{7,8}};
+    int c[2][2], i, j;
+
+    for (i = 0; i &lt; 2; i++)
+        for (j = 0; j &lt; 2; j++)
+            c[i][j] = a[i][j] + b[i][j];
+
+    printf("Sum Matrix:\n");
+    for (i = 0; i &lt; 2; i++)
+    {
+        for (j = 0; j &lt; 2; j++)
+            printf("%d ", c[i][j]);
+        printf("\n");
+    }
+    return 0;
+}
+</pre>
+<p><b>Expected Output:</b></p>
+<pre>
+Sum Matrix:
+6 8
+10 12
+</pre>
+
+<p><b>Matrix Subtraction:</b></p>
+<pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+    int a[2][2] = {{5,6},{7,8}};
+    int b[2][2] = {{1,2},{3,4}};
+    int c[2][2], i, j;
+
+    for (i = 0; i &lt; 2; i++)
+        for (j = 0; j &lt; 2; j++)
+            c[i][j] = a[i][j] - b[i][j];
+
+    printf("Difference Matrix:\n");
+    for (i = 0; i &lt; 2; i++)
+    {
+        for (j = 0; j &lt; 2; j++)
+            printf("%d ", c[i][j]);
+        printf("\n");
+    }
+    return 0;
+}
+</pre>
+<p><b>Expected Output:</b></p>
+<pre>
+Difference Matrix:
+4 4
+4 4
+</pre>
+
+<hr>
+
+<h3>Strings in C</h3>
+<p>A <b>string</b> is an array of characters terminated by a null character <code>'\0'</code>.</p>
+
+<p><b>Declaration:</b> <code>char name[20];</code> declares a character array that can hold up
+to 19 characters plus the null terminator.</p>
+<p><b>Initialization:</b> <code>char name[20] = "Nepal";</code> declares and stores the string
+"Nepal" in the array at the same time.</p>
+
+<table border="1" cellpadding="6" cellspacing="0" width="90%">
+<tr bgcolor="#d2b48c"><th>Function</th><th>Purpose</th></tr>
+<tr><td>strlen()</td><td>Finds the length of a string</td></tr>
+<tr bgcolor="#f5f5dc"><td>strcat()</td><td>Joins (concatenates) two strings</td></tr>
+<tr><td>strcmp()</td><td>Compares two strings</td></tr>
+<tr bgcolor="#f5f5dc"><td>strrev()</td><td>Reverses a string</td></tr>
+<tr><td>strcpy()</td><td>Copies one string into another</td></tr>
+<tr bgcolor="#f5f5dc"><td>strlwr()</td><td>Converts a string to lowercase</td></tr>
+<tr><td>strupr()</td><td>Converts a string to uppercase</td></tr>
+</table>
+
+<p><b>Example Program using String Functions:</b></p>
+<pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main()
+{
+    char str1[20] = "Nepal";
+    char str2[20] = "Computer";
+
+    printf("Length of str1: %d\n", strlen(str1));
+
+    strcat(str1, str2);
+    printf("After strcat: %s\n", str1);
+
+    if (strcmp(str1, str2) == 0)
+        printf("Strings are equal\n");
+    else
+        printf("Strings are not equal\n");
+
+    strupr(str2);
+    printf("Uppercase: %s\n", str2);
+
+    strlwr(str2);
+    printf("Lowercase: %s\n", str2);
+
+    return 0;
+}
+</pre>
+<p><b>Expected Output:</b></p>
+<pre>
+Length of str1: 5
+After strcat: NepalComputer
+Strings are not equal
+Uppercase: COMPUTER
+Lowercase: computer
+</pre>
+<p><i>Note: strupr() and strlwr() are supported in the Turbo C compiler commonly used for NEB
+practicals; in some modern compilers they may need to be written manually using a loop and
+toupper()/tolower() from ctype.h.</i></p>
+
+<h2>PRACTICE PROBLEMS (C Programming)</h2>
+<ol>
+<li>Write a C program to find the largest of three numbers using if-else.</li>
+<li>Write a C program to check whether a given number is prime or not.</li>
+<li>Write a C program to print the factorial of a number using a for loop.</li>
+<li>Write a C program to print the Fibonacci series up to n terms.</li>
+<li>Write a C program to find the sum of all elements of a 1D array of 10 integers.</li>
+<li>Write a C program to check whether a given string is a palindrome using strrev().</li>
+<li>Write a C program to multiply two 2x2 matrices.</li>
+</ol>
+
+<hr>
+
+<center>
+<p>
+<a href="tableofcontents.html">TABLE OF CONTENTS</a>
+&nbsp;|&nbsp;
+<a href="chapter4.html">&larr; PREVIOUS CHAPTER</a>
+&nbsp;|&nbsp;
+<a href="chapter6.html">NEXT CHAPTER &rarr;</a>
+</p>
+</center>
+
 </body>
 </html>

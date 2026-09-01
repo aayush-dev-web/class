@@ -1,8 +1,332 @@
 <html>
 <head>
-    <title></title>
+<title>Chapter 6 - Web Technology I</title>
 </head>
-<body>
-    
+<body bgcolor="#fdf6e3" text="#000000">
+
+<center>
+<h1>CHAPTER 6</h1>
+<h1>WEB TECHNOLOGY I</h1>
+<hr width="80%" size="3" color="black">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/HTML5_logo_and_wordmark.svg" width="180" alt="HTML5 logo representing the markup language used to create web pages">
+</center>
+
+<h2>6.1 Introduction to Web Development</h2>
+<p><b>Web development</b> is the process of building, creating and maintaining websites. It
+includes web design, web publishing, web programming and database management.</p>
+
+<h2>6.2 Web Browsers and Search Engines</h2>
+<p>A <b>web browser</b> is application software used to access and view websites on the
+internet.</p>
+<table border="1" cellpadding="6" cellspacing="0" width="90%">
+<tr bgcolor="#d2b48c"><th>Web Browser</th><th>Developer</th></tr>
+<tr><td>Google Chrome</td><td>Google</td></tr>
+<tr bgcolor="#f5f5dc"><td>Mozilla Firefox</td><td>Mozilla Foundation</td></tr>
+<tr><td>Microsoft Edge</td><td>Microsoft</td></tr>
+<tr bgcolor="#f5f5dc"><td>Safari</td><td>Apple</td></tr>
+</table>
+
+<p>A <b>search engine</b> is a web-based tool that allows users to search for information on
+the internet using keywords. Examples: Google, Bing, Yahoo.</p>
+
+<h2>6.3 Internet and Web Technologies</h2>
+<p>The <b>Internet</b> is a global network that connects millions of computers, allowing them
+to communicate and share information. The <b>World Wide Web (WWW)</b> is a system of
+interlinked documents (web pages) accessed via the internet using a browser.</p>
+
+<center>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Internet_map_1024.jpg" width="400" alt="Visualization of the interconnected network of computers that make up the internet">
+</center>
+
+<h2>6.4 Content Management System</h2>
+<p>A <b>Content Management System (CMS)</b> is software that allows users to create, manage and
+modify content on a website without needing specialized technical/coding knowledge. Examples:
+WordPress, Joomla, Drupal.</p>
+
+<hr>
+
+<h2>6.5 HTML: The Language of the Web</h2>
+<p><b>HTML (HyperText Markup Language)</b> is the standard markup language used to create the
+structure and content of web pages using elements called tags.</p>
+
+<p><b>Objectives of HTML:</b></p>
+<ul>
+<li>To structure content on the web (headings, paragraphs, lists, tables)</li>
+<li>To create links between different web pages (hyperlinks)</li>
+<li>To embed images, audio, video and other media in a web page</li>
+<li>To create forms for collecting user information</li>
+</ul>
+
+<p><b>Structure of an HTML Document:</b></p>
+<pre>
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+   Page content goes here...
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p><b>Publishing and Hosting:</b> After a website is created, it needs a <b>domain name</b> (a
+readable web address, e.g. www.example.com) and <b>web hosting</b> (server space that stores the
+website files and makes them accessible over the internet) to be published on the web.</p>
+
+<p><b>HTML Tags vs Attributes:</b> A <b>tag</b> defines an element, e.g. <code>&lt;p&gt;</code>.
+An <b>attribute</b> provides additional information about a tag and is written inside the
+opening tag, e.g. <code>&lt;body bgcolor="yellow"&gt;</code> - here <code>bgcolor</code> is an
+attribute.</p>
+
+<h3>Basic Tags</h3>
+<table border="1" cellpadding="6" cellspacing="0" width="90%">
+<tr bgcolor="#d2b48c"><th>Tag</th><th>Purpose</th></tr>
+<tr><td>&lt;html&gt;</td><td>Root element of the HTML page</td></tr>
+<tr bgcolor="#f5f5dc"><td>&lt;head&gt;</td><td>Contains meta information about the page, such as the title</td></tr>
+<tr><td>&lt;title&gt;</td><td>Sets the title shown on the browser tab</td></tr>
+<tr bgcolor="#f5f5dc"><td>&lt;body&gt;</td><td>Contains the visible content of the web page</td></tr>
+</table>
+
+<p><b>Body Attributes:</b></p>
+<pre>
+&lt;body text="blue" bgcolor="white" background="image.jpg" bgsound="music.mid"&gt;
+</pre>
+<table border="1" cellpadding="6" cellspacing="0" width="90%">
+<tr bgcolor="#d2b48c"><th>Attribute</th><th>Purpose</th></tr>
+<tr><td>text</td><td>Sets the foreground (text) color of the page</td></tr>
+<tr bgcolor="#f5f5dc"><td>bgcolor</td><td>Sets the background color of the page</td></tr>
+<tr><td>background</td><td>Sets an image as the background of the page</td></tr>
+<tr bgcolor="#f5f5dc"><td>bgsound</td><td>Plays a background sound file when the page loads</td></tr>
+</table>
+
+<h3>Headings</h3>
+<pre>
+&lt;h1 align="center"&gt;This is heading 1&lt;/h1&gt;
+&lt;h2&gt;This is heading 2&lt;/h2&gt;
+&lt;h6&gt;This is heading 6&lt;/h6&gt;
+</pre>
+<p>HTML provides six levels of headings, <code>&lt;h1&gt;</code> (largest/most important) to
+<code>&lt;h6&gt;</code> (smallest). The <code>align</code> attribute can be set to left, right,
+or center.</p>
+
+<h3>Font Tag</h3>
+<pre>
+&lt;font size="5" color="red"&gt;Colored text&lt;/font&gt;
+&lt;basefont size="4"&gt;
+&lt;small&gt;Small Text&lt;/small&gt;
+&lt;big&gt;Big Text&lt;/big&gt;
+</pre>
+<table border="1" cellpadding="6" cellspacing="0" width="90%">
+<tr bgcolor="#d2b48c"><th>Tag/Attribute</th><th>Purpose</th></tr>
+<tr><td>size</td><td>Sets the size of the font (1 to 7)</td></tr>
+<tr bgcolor="#f5f5dc"><td>basefont</td><td>Sets the default font size for the whole document</td></tr>
+<tr><td>small / big</td><td>Displays text in a smaller or bigger size than the surrounding text</td></tr>
+<tr bgcolor="#f5f5dc"><td>color</td><td>Sets the color of the text</td></tr>
+</table>
+
+<h3>Paragraph and Line Break</h3>
+<pre>
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+Line one&lt;br&gt;
+Line two
+</pre>
+<p><code>&lt;p&gt;</code> defines a paragraph, while <code>&lt;br&gt;</code> inserts a single
+line break without starting a new paragraph.</p>
+
+<h3>Comments</h3>
+<pre>
+&lt;!-- This is a comment and is not displayed on the page --&gt;
+</pre>
+
+<h3>Text Formatting Tags</h3>
+<table border="1" cellpadding="6" cellspacing="0" width="90%">
+<tr bgcolor="#d2b48c"><th>Tag</th><th>Effect</th></tr>
+<tr><td>&lt;b&gt;</td><td><b>Bold text</b></td></tr>
+<tr bgcolor="#f5f5dc"><td>&lt;i&gt;</td><td><i>Italic text</i></td></tr>
+<tr><td>&lt;u&gt;</td><td><u>Underlined text</u></td></tr>
+<tr bgcolor="#f5f5dc"><td>&lt;mark&gt;</td><td><mark>Highlighted text</mark></td></tr>
+<tr><td>&lt;sup&gt;</td><td>x<sup>2</sup> (superscript)</td></tr>
+<tr bgcolor="#f5f5dc"><td>&lt;sub&gt;</td><td>H<sub>2</sub>O (subscript)</td></tr>
+<tr><td>&lt;em&gt;</td><td><em>Emphasized text</em></td></tr>
+</table>
+
+<h3>Blockquote and Preformatted Text</h3>
+<pre>
+&lt;blockquote&gt;This is a quoted block of text.&lt;/blockquote&gt;
+&lt;pre&gt;This    text    keeps
+     its   original    spacing&lt;/pre&gt;
+</pre>
+<p><code>&lt;blockquote&gt;</code> indents a block of quoted text, while <code>&lt;pre&gt;</code>
+displays text exactly as typed, preserving spaces and line breaks - commonly used for
+displaying program code.</p>
+
+<h3>Ordered List</h3>
+<pre>
+&lt;ol type="1" start="1"&gt;
+  &lt;li&gt;First Item&lt;/li&gt;
+  &lt;li&gt;Second Item&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+<table border="1" cellpadding="6" cellspacing="0" width="70%">
+<tr bgcolor="#d2b48c"><th>Type Value</th><th>List Style</th></tr>
+<tr><td>1</td><td>Numbers (1, 2, 3...)</td></tr>
+<tr bgcolor="#f5f5dc"><td>I</td><td>Uppercase Roman numerals (I, II, III...)</td></tr>
+<tr><td>A</td><td>Uppercase letters (A, B, C...)</td></tr>
+<tr bgcolor="#f5f5dc"><td>a</td><td>Lowercase letters (a, b, c...)</td></tr>
+</table>
+<p>The <code>start</code> attribute sets the starting number, and the <code>value</code>
+attribute on an individual <code>&lt;li&gt;</code> can override the count at that point.</p>
+
+<h3>Unordered List</h3>
+<pre>
+&lt;ul type="square"&gt;
+  &lt;li&gt;Item One&lt;/li&gt;
+  &lt;li&gt;Item Two&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+<table border="1" cellpadding="6" cellspacing="0" width="70%">
+<tr bgcolor="#d2b48c"><th>Type Value</th><th>Bullet Style</th></tr>
+<tr><td>disc</td><td>Filled circle (default)</td></tr>
+<tr bgcolor="#f5f5dc"><td>circle</td><td>Hollow circle</td></tr>
+<tr><td>square</td><td>Filled square</td></tr>
+</table>
+
+<h3>Definition List</h3>
+<pre>
+&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+<p><code>&lt;dl&gt;</code> defines a list, <code>&lt;dt&gt;</code> defines a term, and
+<code>&lt;dd&gt;</code> defines its description.</p>
+
+<h3>Address Tag</h3>
+<pre>
+&lt;address&gt;
+Kathmandu, Nepal&lt;br&gt;
+Email: info@example.com
+&lt;/address&gt;
+</pre>
+<p>The <code>&lt;address&gt;</code> tag is used to define contact information for the author
+or owner of a document, usually displayed in italics.</p>
+
+<h3>Links (Hyperlinks and Anchors)</h3>
+<pre>
+&lt;a href="chapter1.html"&gt;Link to another HTML document&lt;/a&gt;
+&lt;a href="notes.pdf"&gt;Link to another data object&lt;/a&gt;
+&lt;a href="#section2"&gt;Link to a place in the same document&lt;/a&gt;
+&lt;a href="chapter2.html#topic"&gt;Link to a place in another document&lt;/a&gt;
+&lt;a name="section2"&gt;Section 2&lt;/a&gt;
+</pre>
+<p>The <code>&lt;a&gt;</code> (anchor) tag creates a <b>hyperlink</b>. The <code>href</code>
+attribute specifies the destination, which can be another HTML page, a file, or a bookmark
+(anchor) within the same or a different document.</p>
+
+<h3>Tables</h3>
+<pre>
+&lt;table border="1" cellpadding="5" cellspacing="0"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Marks&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Ram&lt;/td&gt;
+    &lt;td&gt;85&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+<table border="1" cellpadding="6" cellspacing="0" width="70%">
+<tr bgcolor="#d2b48c"><th>Tag</th><th>Purpose</th></tr>
+<tr><td>&lt;table&gt;</td><td>Defines a table</td></tr>
+<tr bgcolor="#f5f5dc"><td>&lt;tr&gt;</td><td>Defines a table row</td></tr>
+<tr><td>&lt;th&gt;</td><td>Defines a table header cell (bold, centered by default)</td></tr>
+<tr bgcolor="#f5f5dc"><td>&lt;td&gt;</td><td>Defines a normal table data cell</td></tr>
+</table>
+
+<h3>Forms</h3>
+<pre>
+&lt;form&gt;
+  Name: &lt;input type="text" name="username"&gt;&lt;br&gt;
+  Gender: &lt;input type="radio" name="gender"&gt; Male
+          &lt;input type="radio" name="gender"&gt; Female&lt;br&gt;
+  Hobbies: &lt;input type="checkbox"&gt; Reading
+           &lt;input type="checkbox"&gt; Sports&lt;br&gt;
+  Address: &lt;textarea rows="3" cols="20"&gt;&lt;/textarea&gt;&lt;br&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+</pre>
+<table border="1" cellpadding="6" cellspacing="0" width="80%">
+<tr bgcolor="#d2b48c"><th>Form Element</th><th>Purpose</th></tr>
+<tr><td>Textbox (type="text")</td><td>Accepts a single line of text input</td></tr>
+<tr bgcolor="#f5f5dc"><td>Radio Button (type="radio")</td><td>Allows the user to select only one option from a group</td></tr>
+<tr><td>Checkbox (type="checkbox")</td><td>Allows the user to select multiple options</td></tr>
+<tr bgcolor="#f5f5dc"><td>Textarea</td><td>Accepts multiple lines of text input</td></tr>
+<tr><td>Button (type="submit")</td><td>Submits the form data</td></tr>
+</table>
+
+<h3>HTML5 Multimedia Tags</h3>
+<pre>
+&lt;audio controls&gt;
+  &lt;source src="song.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+
+&lt;video width="320" height="240" controls&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  &lt;track src="subtitles.vtt" kind="subtitles"&gt;
+&lt;/video&gt;
+
+&lt;embed src="file.pdf" width="400" height="300"&gt;
+</pre>
+<table border="1" cellpadding="6" cellspacing="0" width="90%">
+<tr bgcolor="#d2b48c"><th>Tag</th><th>Purpose</th></tr>
+<tr><td>&lt;audio&gt;</td><td>Embeds sound content in a web page</td></tr>
+<tr bgcolor="#f5f5dc"><td>&lt;video&gt;</td><td>Embeds video content in a web page</td></tr>
+<tr><td>&lt;source&gt;</td><td>Specifies media resources for &lt;audio&gt;/&lt;video&gt;</td></tr>
+<tr bgcolor="#f5f5dc"><td>&lt;track&gt;</td><td>Specifies subtitles/captions for a video</td></tr>
+<tr><td>&lt;embed&gt;</td><td>Embeds external content such as PDFs or media plugins</td></tr>
+</table>
+
+<h3>HTML5 Graphics Tags</h3>
+<pre>
+&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;
+
+&lt;svg width="100" height="100"&gt;
+  &lt;circle cx="50" cy="50" r="40" /&gt;
+&lt;/svg&gt;
+</pre>
+<p><code>&lt;canvas&gt;</code> is used (with JavaScript) to draw graphics on the fly, while
+<code>&lt;svg&gt;</code> (Scalable Vector Graphics) is used to define vector-based graphics
+directly in HTML.</p>
+
+<h3>Domain Name and Web Hosting</h3>
+<p>A <b>domain name</b> is a readable address used to identify a website on the internet
+(e.g. neb.gov.np). <b>Web hosting</b> is a service that stores website files on a server and
+makes the website accessible on the internet.</p>
+
+<h3>Introduction to CSS</h3>
+<p><b>CSS (Cascading Style Sheets)</b> is a language used to describe the presentation
+(colors, fonts, layout) of an HTML document.</p>
+<table border="1" cellpadding="6" cellspacing="0" width="90%">
+<tr bgcolor="#d2b48c"><th>Type of CSS</th><th>Description</th></tr>
+<tr><td>Inline CSS</td><td>Applied directly to a single HTML element using the style attribute</td></tr>
+<tr bgcolor="#f5f5dc"><td>Embedded (Internal) CSS</td><td>Written inside a &lt;style&gt; tag in the head section of the HTML document</td></tr>
+<tr><td>External CSS</td><td>Written in a separate .css file and linked to the HTML document</td></tr>
+</table>
+<p><i>Note: This particular website is built for a Grade 11 HTML practical and therefore uses
+only plain HTML tags and attributes; no CSS or JavaScript has been used to build these pages.</i></p>
+
+<hr>
+
+<center>
+<p>
+<a href="tableofcontents.html">TABLE OF CONTENTS</a>
+&nbsp;|&nbsp;
+<a href="chapter5.html">&larr; PREVIOUS CHAPTER</a>
+&nbsp;|&nbsp;
+<a href="chapter7.html">NEXT CHAPTER &rarr;</a>
+</p>
+</center>
+
 </body>
 </html>
