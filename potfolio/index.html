@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aayush Sah | 07/13</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+
+  <div class="loader" id="loader">
+    <div class="loader-card">
+      <div class="loader-logo"><img src="logo.png" alt="Logo" width="120"></div>
+      <h2>Aayush Sah</h2>
+      <p>Crafting a premium portfolio experience...</p>
+    </div>
+  </div>
+
+  <div class="particles" id="particles"></div>
+
+  <nav class="nav" id="navbar">
+    <a class="brand" href="#home">
+      <div class="logo"><img src="logo.png" alt="Logo" width="120"></div>
+      <div>
+        <div style="font-size:1rem;">Aayush Sah</div>
+        <div style="font-size:.78rem;color:var(--muted);font-weight:500;">Developer • Designer • Tech Enthusiast</div>
+      </div>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="hero" id="home">
+      <div class="hero-grid">
+        <div class="reveal">
+          <div class="eyebrow">
+            <span class="dot"></span>
+            Premium Student Portfolio 
+          </div>
+
+          <h1>I'M <span class="glow">AAYUSH</span></h1>
+
+          <p class="subtitle">
+            I’m a web developer, graphic designer, and coding enthusiast passionate about building modern digital experiences with clean design, strong visuals, and smooth interactions. I enjoy turning ideas into elegant, high-impact creations.
+            <br><br>
+            <span class="typing" id="typing"></span>
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="#contact">Contact Me</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <strong>+2</strong>
+              <span>Study Level</span>
+            </div>
+            <div class="stat">
+              <strong>3+</strong>
+              <span>Creative Roles</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span>Passion Driven</span>
+            </div>
+            <div class="stat">
+              <strong>Dark</strong>
+              <span>Luxury Aesthetic</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="portrait-wrap">
+            <img
+              class="portrait-image"
+              src="profile.png"
+              alt="Aayush Sah Profile Photo"
+            />
+            <div class="portrait-badge">
+              <div>
+                <strong>Aayush Sah</strong>
+                <span>Web Developer • Graphic Designer • Tech Enthusiast</span>
+              </div>
+              <div style="text-align:right;">
+                <strong style="color:var(--accent2)">Premium</strong>
+                <span>Visual Presentation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-title reveal">
+        <h2>About</h2>
+        <p>A short introduction about who I am, what I do, and what drives my creative work.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card reveal">
+          <h3>Who I Am</h3>
+          <p>
+            I’m Aayush Sah, a Grade 11 student at St. Xavier's College, Maitighar, with a strong interest in web development, graphic design, and modern technology. I love exploring how design and code can work together to create polished, memorable digital products.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <h3>What I Value</h3>
+          <p>
+            I focus on creativity, attention to detail, and clean execution. Whether I am designing a visual identity or building a website, I aim for a premium, user-friendly result that looks professional and feels smooth to use.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-title reveal">
+        <h2>Skills</h2>
+        <p>Core strengths that define my creative and technical workflow.</p>
+      </div>
+
+      <div class="skills">
+        <div class="skill reveal">
+          <div class="skill-top"><strong>HTML / CSS</strong><span>95%</span></div>
+          <div class="bar"><span data-width="95%"></span></div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill-top"><strong>JavaScript</strong><span>85%</span></div>
+          <div class="bar"><span data-width="85%"></span></div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill-top"><strong>Graphic Design</strong><span>90%</span></div>
+          <div class="bar"><span data-width="90%"></span></div>
+        </div>
+
+        <div class="skill reveal">
+          <div class="skill-top"><strong>UI / UX Thinking</strong><span>80%</span></div>
+          <div class="bar"><span data-width="80%"></span></div>
+        </div>
+      </div>
+    </section>
+<!--                                                   html for services                                     -->
+
+
+   <section id="services">
+  <div class="section-title reveal">
+    <h2>Services</h2>
+    <p>Ways I can help with creative and digital work.</p>
+  </div>
+
+  <div class="services">
+    <div class="card service reveal">
+      <div class="icon">🌐</div>
+      <h3>Web Design</h3>
+      <p>Modern, responsive, and visually polished websites with a premium user experience.</p>
+      <a href="#contact" class="btn primary service-btn">Hire Me</a>
+    </div>
+
+    <div class="card service reveal">
+      <div class="icon">🎨</div>
+      <h3>Graphic Design</h3>
+      <p>Clean posters, branding elements, thumbnails, and social media visuals with strong identity.</p>
+      <a href="#contact" class="btn primary service-btn">Order Now</a>
+    </div>
+
+    <div class="card service reveal">
+      <div class="icon">⚡</div>
+      <h3>Front-End Development</h3>
+      <p>Interactive interfaces, smooth transitions, and elegant layouts built with modern web standards.</p>
+      <a href="#contact" class="btn primary service-btn">Hire Me</a>
+    </div>
+  </div>
+</section>
+
+
+   
+
+
+
+
+<!--                                                   html for project                                     -->
+
+<section id="projects">
+  <div class="section-title reveal">
+    <h2>Projects</h2>
+    <p>A few showcase ideas for presenting your best work in a premium style.</p>
+  </div>
+
+  <div class="projects">
+    <div class="card project reveal">
+      <div class="thumb">
+        <img src="img1.png" alt="Project 1">
+      </div>
+      <h3>Luxury Portfolio Website</h3>
+      <p>A cinematic personal portfolio concept with glassmorphism and refined lighting effects.</p>
+      <div>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+      </div>
+    </div>
+
+    <div class="card project reveal">
+      <div class="thumb">
+        <img src="img2.png" alt="Project 2">
+      </div>
+      <h3>Creative Poster Design</h3>
+      <p>A bold visual design focused on typography, contrast, and strong brand energy.</p>
+      <div>
+        <span class="tag">Photoshop</span>
+        <span class="tag">Illustrator</span>
+      </div>
+    </div>
+
+    <div class="card project reveal">
+      <div class="thumb">
+        <img src="img3.png" alt="Project 3">
+      </div>
+      <h3>Responsive Landing Page</h3>
+      <p>A clean and modern landing page built for a polished product presentation.</p>
+      <div>
+        <span class="tag">UI / UX</span>
+        <span class="tag">Responsive</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!--                                        html for contact                                               -->
+    <section id="contact">
+      <div class="section-title reveal">
+        <h2>Contact</h2>
+        <p>Reach out through social platforms or the form below.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="card reveal">
+          <h3>Let’s Connect</h3>
+          <p>
+            If you'd like to collaborate, discuss a design idea, or talk about development, feel free to contact me through the links below.
+          </p>
+
+          <div class="contact-list">
+            <a class="contact-item" href="https://www.facebook.com/aayush.sah08" target="_blank" rel="noopener noreferrer">
+              <div>
+                <strong>Facebook</strong><br />
+                <span>Aayush Sah</span>
+              </div>
+              <span>Social</span>
+            </a>
+
+            <a class="contact-item" href="https://www.instagram.com/aayusz7" target="_blank" rel="noopener noreferrer">
+              <div>
+                <strong>Instagram</strong><br />
+                <span>@aayusz7</span>
+              </div>
+              <span>Social</span>
+            </a>
+
+            <a class="contact-item" href="mailto:aayushfourth@gmail.com">
+              <div>
+                <strong>Email</strong><br />
+                <span>aayushfourth@gmail.com</span>
+              </div>
+              <span>Gmail</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+  <h3>Send a Message</h3>
+
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input
+      type="hidden"
+      name="access_key"
+      value="ba795973-bc4d-4ac0-a179-55b0a9ba3a94"
+    />
+
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="text" name="subject" placeholder="Subject" />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button class="btn primary" type="submit">Send Message</button>
+  </form>
+</div>
+
+     
+    </section>
+
+    <div class="footer">
+      © 2026 Aayush Sah • Premium Portfolio Design
+    </div>
+  </main>
+
+  <button class="top-btn" id="topBtn" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
