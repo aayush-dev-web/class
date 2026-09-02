@@ -2,12 +2,13 @@
 <head>
 <title>Chapter 2 - Number System and Boolean Logic</title>
 </head>
-<body bgcolor="#fdf6e3" text="#000000">
+<body bgcolor="white" text="black">
 
 <center>
-<h1>CHAPTER 2</h1>
+<h1>CLASS 11 COMPUTER SCIENCE</h1>
+<h2>CHAPTER 2</h2>
 <h1>NUMBER SYSTEM AND BOOLEAN LOGIC</h1>
-<hr width="80%" size="3" color="black">
+<hr width="80%">
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Binary_code.jpg" width="350" alt="Stream of binary digits 0 and 1 representing how computers store and process numbers">
 </center>
 
@@ -17,11 +18,11 @@
 symbols used is called the <b>base</b> or <b>radix</b> of the number system.</p>
 
 <table border="1" cellpadding="6" cellspacing="0" width="90%">
-<tr bgcolor="#d2b48c"><th>Number System</th><th>Base</th><th>Digits Used</th></tr>
+<tr><th>Number System</th><th>Base</th><th>Digits Used</th></tr>
 <tr><td>Decimal</td><td>10</td><td>0,1,2,3,4,5,6,7,8,9</td></tr>
-<tr bgcolor="#f5f5dc"><td>Binary</td><td>2</td><td>0,1</td></tr>
+<tr><td>Binary</td><td>2</td><td>0,1</td></tr>
 <tr><td>Octal</td><td>8</td><td>0,1,2,3,4,5,6,7</td></tr>
-<tr bgcolor="#f5f5dc"><td>Hexadecimal</td><td>16</td><td>0-9, A,B,C,D,E,F</td></tr>
+<tr><td>Hexadecimal</td><td>16</td><td>0-9, A,B,C,D,E,F</td></tr>
 </table>
 
 <h3>Decimal to Binary Conversion</h3>
@@ -141,11 +142,11 @@ Answer: (FF)16 = (11111111)2
 
 <h3>Binary Addition</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="50%">
-<tr bgcolor="#d2b48c"><th>A</th><th>B</th><th>Sum</th><th>Carry</th></tr>
+<tr><th>A</th><th>B</th><th>Sum</th><th>Carry</th></tr>
 <tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-<tr bgcolor="#f5f5dc"><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>1</td><td>0</td></tr>
 <tr><td>1</td><td>0</td><td>1</td><td>0</td></tr>
-<tr bgcolor="#f5f5dc"><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>1</td><td>1</td><td>0</td><td>1</td></tr>
 </table>
 
 <p><b>Example:</b> Add (1011)<sub>2</sub> and (1101)<sub>2</sub></p>
@@ -160,11 +161,11 @@ Answer: 1011 + 1101 = 11000
 
 <h3>Binary Subtraction</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="50%">
-<tr bgcolor="#d2b48c"><th>A</th><th>B</th><th>Difference</th><th>Borrow</th></tr>
+<tr><th>A</th><th>B</th><th>Difference</th><th>Borrow</th></tr>
 <tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-<tr bgcolor="#f5f5dc"><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>0</td><td>1</td><td>1</td><td>1</td></tr>
 <tr><td>1</td><td>0</td><td>1</td><td>0</td></tr>
-<tr bgcolor="#f5f5dc"><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>1</td><td>1</td><td>0</td><td>0</td></tr>
 </table>
 
 <p><b>Example:</b> Subtract (101)<sub>2</sub> from (1101)<sub>2</sub></p>
@@ -259,102 +260,95 @@ used as the building block of digital circuits.</p>
 <h3>AND Gate</h3>
 <p><b>Definition:</b> The AND gate gives output 1 only when all its inputs are 1.
 <b>Logic Function:</b> Y = A . B</p>
-<center>
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/AND_ANSI_Labelled.svg" width="150" alt="Standard symbol of an AND logic gate with two inputs A and B and one output Y">
-</center>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/AND_ANSI_Labelled.svg" align="left" width="130" hspace="12" vspace="6" alt="Standard symbol of an AND logic gate with two inputs A and B and one output Y">
 <table border="1" cellpadding="6" cellspacing="0" width="40%">
-<tr bgcolor="#d2b48c"><th>A</th><th>B</th><th>Y = A.B</th></tr>
+<tr><th>A</th><th>B</th><th>Y = A.B</th></tr>
 <tr><td>0</td><td>0</td><td>0</td></tr>
-<tr bgcolor="#f5f5dc"><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>0</td></tr>
 <tr><td>1</td><td>0</td><td>0</td></tr>
-<tr bgcolor="#f5f5dc"><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>1</td><td>1</td><td>1</td></tr>
 </table>
+<br clear="all">
 <p><b>Example:</b> A room light turns ON only when both the main switch (A) AND the local switch
 (B) are ON.</p>
 
 <h3>OR Gate</h3>
 <p><b>Definition:</b> The OR gate gives output 1 when at least one input is 1.
 <b>Logic Function:</b> Y = A + B</p>
-<center>
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/OR_ANSI_Labelled.svg" width="150" alt="Standard symbol of an OR logic gate with two inputs A and B and one output Y">
-</center>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/OR_ANSI_Labelled.svg" align="right" width="130" hspace="12" vspace="6" alt="Standard symbol of an OR logic gate with two inputs A and B and one output Y">
 <table border="1" cellpadding="6" cellspacing="0" width="40%">
-<tr bgcolor="#d2b48c"><th>A</th><th>B</th><th>Y = A+B</th></tr>
+<tr><th>A</th><th>B</th><th>Y = A+B</th></tr>
 <tr><td>0</td><td>0</td><td>0</td></tr>
-<tr bgcolor="#f5f5dc"><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>0</td><td>1</td><td>1</td></tr>
 <tr><td>1</td><td>0</td><td>1</td></tr>
-<tr bgcolor="#f5f5dc"><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>1</td><td>1</td><td>1</td></tr>
 </table>
+<br clear="all">
 <p><b>Example:</b> A doorbell rings if either the front switch (A) OR the back switch (B) is
 pressed.</p>
 
 <h3>NOT Gate</h3>
 <p><b>Definition:</b> The NOT gate (inverter) reverses the input; it has only one input.
 <b>Logic Function:</b> Y = A'</p>
-<center>
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/NOT_ANSI_Labelled.svg" width="150" alt="Standard symbol of a NOT logic gate showing a single input A and inverted output Y">
-</center>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/NOT_ANSI_Labelled.svg" align="left" width="130" hspace="12" vspace="6" alt="Standard symbol of a NOT logic gate showing a single input A and inverted output Y">
 <table border="1" cellpadding="6" cellspacing="0" width="30%">
-<tr bgcolor="#d2b48c"><th>A</th><th>Y = A'</th></tr>
+<tr><th>A</th><th>Y = A'</th></tr>
 <tr><td>0</td><td>1</td></tr>
-<tr bgcolor="#f5f5dc"><td>1</td><td>0</td></tr>
+<tr><td>1</td><td>0</td></tr>
 </table>
+<br clear="all">
 
 <h3>NAND Gate</h3>
 <p><b>Definition:</b> NAND = NOT + AND. It gives output 0 only when all inputs are 1 (opposite
 of AND). <b>Logic Function:</b> Y = (A.B)'</p>
-<center>
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/NAND_ANSI_Labelled.svg" width="150" alt="Standard symbol of a NAND logic gate with two inputs and one output">
-</center>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/NAND_ANSI_Labelled.svg" align="right" width="130" hspace="12" vspace="6" alt="Standard symbol of a NAND logic gate with two inputs and one output">
 <table border="1" cellpadding="6" cellspacing="0" width="40%">
-<tr bgcolor="#d2b48c"><th>A</th><th>B</th><th>Y = (A.B)'</th></tr>
+<tr><th>A</th><th>B</th><th>Y = (A.B)'</th></tr>
 <tr><td>0</td><td>0</td><td>1</td></tr>
-<tr bgcolor="#f5f5dc"><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>0</td><td>1</td><td>1</td></tr>
 <tr><td>1</td><td>0</td><td>1</td></tr>
-<tr bgcolor="#f5f5dc"><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>1</td><td>1</td><td>0</td></tr>
 </table>
+<br clear="all">
 
 <h3>NOR Gate</h3>
 <p><b>Definition:</b> NOR = NOT + OR. It gives output 1 only when all inputs are 0 (opposite of
 OR). <b>Logic Function:</b> Y = (A+B)'</p>
-<center>
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/NOR_ANSI_Labelled.svg" width="150" alt="Standard symbol of a NOR logic gate with two inputs and one output">
-</center>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/NOR_ANSI_Labelled.svg" align="left" width="130" hspace="12" vspace="6" alt="Standard symbol of a NOR logic gate with two inputs and one output">
 <table border="1" cellpadding="6" cellspacing="0" width="40%">
-<tr bgcolor="#d2b48c"><th>A</th><th>B</th><th>Y = (A+B)'</th></tr>
+<tr><th>A</th><th>B</th><th>Y = (A+B)'</th></tr>
 <tr><td>0</td><td>0</td><td>1</td></tr>
-<tr bgcolor="#f5f5dc"><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>0</td></tr>
 <tr><td>1</td><td>0</td><td>0</td></tr>
-<tr bgcolor="#f5f5dc"><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>1</td><td>1</td><td>0</td></tr>
 </table>
+<br clear="all">
 
 <h3>XOR Gate (Exclusive OR)</h3>
 <p><b>Definition:</b> Gives output 1 only when the inputs are different.
 <b>Logic Function:</b> Y = A &oplus; B</p>
-<center>
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/XOR_ANSI_Labelled.svg" width="150" alt="Standard symbol of an XOR exclusive-OR logic gate with two inputs and one output">
-</center>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/XOR_ANSI_Labelled.svg" align="right" width="130" hspace="12" vspace="6" alt="Standard symbol of an XOR exclusive-OR logic gate with two inputs and one output">
 <table border="1" cellpadding="6" cellspacing="0" width="40%">
-<tr bgcolor="#d2b48c"><th>A</th><th>B</th><th>Y = A&oplus;B</th></tr>
+<tr><th>A</th><th>B</th><th>Y = A&oplus;B</th></tr>
 <tr><td>0</td><td>0</td><td>0</td></tr>
-<tr bgcolor="#f5f5dc"><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>0</td><td>1</td><td>1</td></tr>
 <tr><td>1</td><td>0</td><td>1</td></tr>
-<tr bgcolor="#f5f5dc"><td>1</td><td>1</td><td>0</td></tr>
+<tr><td>1</td><td>1</td><td>0</td></tr>
 </table>
+<br clear="all">
 
 <h3>XNOR Gate (Exclusive NOR)</h3>
 <p><b>Definition:</b> Gives output 1 only when both inputs are the same.
 <b>Logic Function:</b> Y = (A &oplus; B)'</p>
-<center>
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/XNOR_ANSI_Labelled.svg" width="150" alt="Standard symbol of an XNOR logic gate with two inputs and one output">
-</center>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/XNOR_ANSI_Labelled.svg" align="left" width="130" hspace="12" vspace="6" alt="Standard symbol of an XNOR logic gate with two inputs and one output">
 <table border="1" cellpadding="6" cellspacing="0" width="40%">
-<tr bgcolor="#d2b48c"><th>A</th><th>B</th><th>Y = (A&oplus;B)'</th></tr>
+<tr><th>A</th><th>B</th><th>Y = (A&oplus;B)'</th></tr>
 <tr><td>0</td><td>0</td><td>1</td></tr>
-<tr bgcolor="#f5f5dc"><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>0</td></tr>
 <tr><td>1</td><td>0</td><td>0</td></tr>
-<tr bgcolor="#f5f5dc"><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>1</td><td>1</td><td>1</td></tr>
 </table>
+<br clear="all">
 
 <hr>
 
@@ -362,35 +356,35 @@ OR). <b>Logic Function:</b> Y = (A+B)'</p>
 
 <h3>Complement Laws</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="60%">
-<tr bgcolor="#d2b48c"><th>Law</th><th>Expression</th></tr>
+<tr><th>Law</th><th>Expression</th></tr>
 <tr><td>Complement Law 1</td><td>A + A' = 1</td></tr>
-<tr bgcolor="#f5f5dc"><td>Complement Law 2</td><td>A . A' = 0</td></tr>
+<tr><td>Complement Law 2</td><td>A . A' = 0</td></tr>
 </table>
 
 <h3>Identity Laws</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="60%">
-<tr bgcolor="#d2b48c"><th>Law</th><th>Expression</th></tr>
+<tr><th>Law</th><th>Expression</th></tr>
 <tr><td>OR Identity</td><td>A + 0 = A</td></tr>
-<tr bgcolor="#f5f5dc"><td>AND Identity</td><td>A . 1 = A</td></tr>
+<tr><td>AND Identity</td><td>A . 1 = A</td></tr>
 </table>
 
 <h3>Null / Dominance Laws</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="60%">
-<tr bgcolor="#d2b48c"><th>Law</th><th>Expression</th></tr>
+<tr><th>Law</th><th>Expression</th></tr>
 <tr><td>OR Dominance</td><td>A + 1 = 1</td></tr>
-<tr bgcolor="#f5f5dc"><td>AND Dominance</td><td>A . 0 = 0</td></tr>
+<tr><td>AND Dominance</td><td>A . 0 = 0</td></tr>
 </table>
 
 <h3>Idempotent Laws</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="60%">
-<tr bgcolor="#d2b48c"><th>Law</th><th>Expression</th></tr>
+<tr><th>Law</th><th>Expression</th></tr>
 <tr><td>OR Idempotent</td><td>A + A = A</td></tr>
-<tr bgcolor="#f5f5dc"><td>AND Idempotent</td><td>A . A = A</td></tr>
+<tr><td>AND Idempotent</td><td>A . A = A</td></tr>
 </table>
 
 <h3>Involution Law</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="60%">
-<tr bgcolor="#d2b48c"><th>Law</th><th>Expression</th></tr>
+<tr><th>Law</th><th>Expression</th></tr>
 <tr><td>Double Complement</td><td>(A')' = A</td></tr>
 </table>
 <p>The involution law states that if a variable is complemented twice, it returns to its
@@ -398,42 +392,42 @@ original value.</p>
 
 <h3>Commutative Laws</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="60%">
-<tr bgcolor="#d2b48c"><th>Law</th><th>Expression</th></tr>
+<tr><th>Law</th><th>Expression</th></tr>
 <tr><td>OR</td><td>A + B = B + A</td></tr>
-<tr bgcolor="#f5f5dc"><td>AND</td><td>A . B = B . A</td></tr>
+<tr><td>AND</td><td>A . B = B . A</td></tr>
 </table>
 
 <h3>Associative Laws</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="70%">
-<tr bgcolor="#d2b48c"><th>Law</th><th>Expression</th></tr>
+<tr><th>Law</th><th>Expression</th></tr>
 <tr><td>OR</td><td>(A + B) + C = A + (B + C)</td></tr>
-<tr bgcolor="#f5f5dc"><td>AND</td><td>(A . B) . C = A . (B . C)</td></tr>
+<tr><td>AND</td><td>(A . B) . C = A . (B . C)</td></tr>
 </table>
 
 <h3>Distributive Laws</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="70%">
-<tr bgcolor="#d2b48c"><th>Law</th><th>Expression</th></tr>
+<tr><th>Law</th><th>Expression</th></tr>
 <tr><td>Distributive 1</td><td>A . (B + C) = A.B + A.C</td></tr>
-<tr bgcolor="#f5f5dc"><td>Distributive 2</td><td>A + (B . C) = (A+B) . (A+C)</td></tr>
+<tr><td>Distributive 2</td><td>A + (B . C) = (A+B) . (A+C)</td></tr>
 </table>
 
 <h3>Verification using Truth Table: A + A' = 1</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="40%">
-<tr bgcolor="#d2b48c"><th>A</th><th>A'</th><th>A + A'</th></tr>
+<tr><th>A</th><th>A'</th><th>A + A'</th></tr>
 <tr><td>0</td><td>1</td><td>1</td></tr>
-<tr bgcolor="#f5f5dc"><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>1</td><td>0</td><td>1</td></tr>
 </table>
 <p>Since the output is always 1 for every input combination, the law A + A' = 1 is verified.</p>
 
 <h3>Verification using Truth Table: A . (B + C) = A.B + A.C</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="90%">
-<tr bgcolor="#d2b48c"><th>A</th><th>B</th><th>C</th><th>B+C</th><th>A.(B+C)</th><th>A.B</th><th>A.C</th><th>A.B+A.C</th></tr>
+<tr><th>A</th><th>B</th><th>C</th><th>B+C</th><th>A.(B+C)</th><th>A.B</th><th>A.C</th><th>A.B+A.C</th></tr>
 <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-<tr bgcolor="#f5f5dc"><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
 <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-<tr bgcolor="#f5f5dc"><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
 <tr><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
-<tr bgcolor="#f5f5dc"><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+<tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
 </table>
 <p>Since the columns A.(B+C) and A.B+A.C are identical for every combination, the distributive
 law is verified.</p>
@@ -454,11 +448,11 @@ expressions and can be verified using truth tables.</p>
 
 <h2>KEY TERMS</h2>
 <table border="1" cellpadding="6" cellspacing="0" width="95%">
-<tr bgcolor="#d2b48c"><th>Term</th><th>Meaning in Brief</th></tr>
+<tr><th>Term</th><th>Meaning in Brief</th></tr>
 <tr><td>Radix/Base</td><td>The number of unique digits used in a number system</td></tr>
-<tr bgcolor="#f5f5dc"><td>1's Complement</td><td>Number obtained by inverting all bits (0 to 1, 1 to 0)</td></tr>
+<tr><td>1's Complement</td><td>Number obtained by inverting all bits (0 to 1, 1 to 0)</td></tr>
 <tr><td>2's Complement</td><td>1's complement plus 1</td></tr>
-<tr bgcolor="#f5f5dc"><td>Truth Table</td><td>A table listing all input combinations and their corresponding outputs</td></tr>
+<tr><td>Truth Table</td><td>A table listing all input combinations and their corresponding outputs</td></tr>
 <tr><td>Logic Gate</td><td>An electronic circuit implementing a basic logical operation</td></tr>
 </table>
 

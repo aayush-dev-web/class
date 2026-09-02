@@ -2,12 +2,13 @@
 <head>
 <title>Chapter 5 - Programming Concepts and C Programming</title>
 </head>
-<body bgcolor="#fdf6e3" text="#000000">
+<body bgcolor="white" text="black">
 
 <center>
-<h1>CHAPTER 5</h1>
+<h1>CLASS 11 COMPUTER SCIENCE</h1>
+<h2>CHAPTER 5</h2>
 <h1>PROGRAMMING CONCEPTS AND C PROGRAMMING</h1>
-<hr width="80%" size="3" color="black">
+<hr width="80%">
 <img src="https://commons.wikimedia.org/wiki/Special:FilePath/C_Programming_Language.svg" width="150" alt="Logo representing the C programming language">
 </center>
 
@@ -18,33 +19,33 @@
 computer can understand and execute.</p>
 
 <table border="1" cellpadding="6" cellspacing="0" width="95%">
-<tr bgcolor="#d2b48c"><th>Type</th><th>Description</th><th>Example</th></tr>
+<tr><th>Type</th><th>Description</th><th>Example</th></tr>
 <tr><td><b>Low-level Language</b></td><td>Close to machine code, hard for humans to understand but fast for the machine (Machine Language, Assembly Language)</td><td>Assembly Language</td></tr>
-<tr bgcolor="#f5f5dc"><td><b>High-level Language</b></td><td>Close to human language (English-like), easy to write, read and maintain</td><td>C, C++, Java, Python</td></tr>
+<tr><td><b>High-level Language</b></td><td>Close to human language (English-like), easy to write, read and maintain</td><td>C, C++, Java, Python</td></tr>
 <tr><td><b>4GL (Fourth Generation Language)</b></td><td>Very high level languages designed for a specific purpose such as database queries, requiring fewer lines of code</td><td>SQL</td></tr>
 </table>
 
 <p><b>Translators (Language Processors):</b></p>
 <table border="1" cellpadding="6" cellspacing="0" width="95%">
-<tr bgcolor="#d2b48c"><th>Term</th><th>Description</th></tr>
+<tr><th>Term</th><th>Description</th></tr>
 <tr><td><b>Compiler</b></td><td>Translates the entire high-level source code into machine code at once before execution</td></tr>
-<tr bgcolor="#f5f5dc"><td><b>Interpreter</b></td><td>Translates and executes source code line by line</td></tr>
+<tr><td><b>Interpreter</b></td><td>Translates and executes source code line by line</td></tr>
 <tr><td><b>Assembler</b></td><td>Translates assembly language code into machine code</td></tr>
 </table>
 
 <p><b>Types of Errors:</b></p>
 <table border="1" cellpadding="6" cellspacing="0" width="95%">
-<tr bgcolor="#d2b48c"><th>Error Type</th><th>Description</th></tr>
+<tr><th>Error Type</th><th>Description</th></tr>
 <tr><td><b>Syntax Error</b></td><td>Occurs when the rules (grammar) of the programming language are violated, e.g. missing semicolon</td></tr>
-<tr bgcolor="#f5f5dc"><td><b>Semantic Error</b></td><td>Occurs when a statement is syntactically correct but does not do what was intended</td></tr>
+<tr><td><b>Semantic Error</b></td><td>Occurs when a statement is syntactically correct but does not do what was intended</td></tr>
 <tr><td><b>Runtime Error</b></td><td>Occurs while the program is running, e.g. division by zero</td></tr>
 </table>
 
 <h3>Program Control Structures</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="95%">
-<tr bgcolor="#d2b48c"><th>Structure</th><th>Description</th></tr>
+<tr><th>Structure</th><th>Description</th></tr>
 <tr><td><b>Sequence</b></td><td>Instructions are executed one after another in the order they are written</td></tr>
-<tr bgcolor="#f5f5dc"><td><b>Selection</b></td><td>A decision is made and one of two or more paths is chosen (if, if-else, switch)</td></tr>
+<tr><td><b>Selection</b></td><td>A decision is made and one of two or more paths is chosen (if, if-else, switch)</td></tr>
 <tr><td><b>Iteration</b></td><td>A set of instructions is repeated as long as a condition is true (loops)</td></tr>
 </table>
 
@@ -63,9 +64,7 @@ Step 5: Stop
 (Oval for start/stop, Parallelogram for input/output, Rectangle for process, Diamond for
 decision).</p>
 
-<center>
-<img src="https://commons.wikimedia.org/wiki/Special:FilePath/LampFlowchart.svg" width="300" alt="Example flowchart diagram showing decision boxes, process boxes and arrows used to represent an algorithm">
-</center>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/LampFlowchart.svg" align="right" width="220" hspace="12" vspace="6" alt="Example flowchart diagram showing decision boxes, process boxes and arrows used to represent an algorithm">
 
 <p><b>Pseudocode:</b> An informal, English-like way of describing an algorithm without following
 the strict syntax of any programming language.</p>
@@ -77,13 +76,15 @@ BEGIN
 END
 </pre>
 
+<br clear="all">
+
 <h3>Data Representation</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="95%">
-<tr bgcolor="#d2b48c"><th>Term</th><th>Description</th></tr>
+<tr><th>Term</th><th>Description</th></tr>
 <tr><td><b>Binary</b></td><td>Data representation using only 0s and 1s, the basic language of computers</td></tr>
-<tr bgcolor="#f5f5dc"><td><b>BCD (Binary Coded Decimal)</b></td><td>A coding system where each decimal digit is represented separately by a 4-bit binary code</td></tr>
+<tr><td><b>BCD (Binary Coded Decimal)</b></td><td>A coding system where each decimal digit is represented separately by a 4-bit binary code</td></tr>
 <tr><td><b>ASCII</b></td><td>American Standard Code for Information Interchange - a 7/8-bit character encoding standard used to represent text (128/256 characters)</td></tr>
-<tr bgcolor="#f5f5dc"><td><b>Unicode</b></td><td>A universal character encoding standard that can represent characters from almost all writing systems in the world using 16 or more bits</td></tr>
+<tr><td><b>Unicode</b></td><td>A universal character encoding standard that can represent characters from almost all writing systems in the world using 16 or more bits</td></tr>
 </table>
 
 <hr>
@@ -137,11 +138,11 @@ constants, strings and operators.</p>
 
 <h3>Basic Data Types</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="90%">
-<tr bgcolor="#d2b48c"><th>Data Type</th><th>Description</th><th>Example</th></tr>
+<tr><th>Data Type</th><th>Description</th><th>Example</th></tr>
 <tr><td>int</td><td>Stores whole numbers</td><td>10, -5</td></tr>
-<tr bgcolor="#f5f5dc"><td>float</td><td>Stores decimal (real) numbers</td><td>3.14</td></tr>
+<tr><td>float</td><td>Stores decimal (real) numbers</td><td>3.14</td></tr>
 <tr><td>char</td><td>Stores a single character</td><td>'A'</td></tr>
-<tr bgcolor="#f5f5dc"><td>double</td><td>Stores double precision decimal numbers</td><td>3.14159265</td></tr>
+<tr><td>double</td><td>Stores double precision decimal numbers</td><td>3.14159265</td></tr>
 </table>
 
 <p><b>Constants:</b> Values that do not change during program execution, e.g. <code>const int
@@ -157,22 +158,22 @@ block, commonly used with if, for, while.</p>
 
 <h3>Operators in C</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="95%">
-<tr bgcolor="#d2b48c"><th>Operator Type</th><th>Symbols</th><th>Example</th></tr>
+<tr><th>Operator Type</th><th>Symbols</th><th>Example</th></tr>
 <tr><td>Arithmetic</td><td>+  -  *  /  %</td><td>a + b, a % b</td></tr>
-<tr bgcolor="#f5f5dc"><td>Relational</td><td>==  !=  &gt;  &lt;  &gt;=  &lt;=</td><td>a &gt; b</td></tr>
+<tr><td>Relational</td><td>==  !=  &gt;  &lt;  &gt;=  &lt;=</td><td>a &gt; b</td></tr>
 <tr><td>Logical</td><td>&amp;&amp;  ||  !</td><td>a &gt; 0 &amp;&amp; b &gt; 0</td></tr>
-<tr bgcolor="#f5f5dc"><td>Assignment</td><td>=  +=  -=  *=  /=</td><td>a += 5</td></tr>
+<tr><td>Assignment</td><td>=  +=  -=  *=  /=</td><td>a += 5</td></tr>
 <tr><td>Unary</td><td>++  --  -</td><td>a++, --b</td></tr>
-<tr bgcolor="#f5f5dc"><td>Conditional (Ternary)</td><td>?  :</td><td>max = (a&gt;b) ? a : b;</td></tr>
+<tr><td>Conditional (Ternary)</td><td>?  :</td><td>max = (a&gt;b) ? a : b;</td></tr>
 </table>
 
 <h3>Input / Output Functions</h3>
 <table border="1" cellpadding="6" cellspacing="0" width="90%">
-<tr bgcolor="#d2b48c"><th>Function</th><th>Purpose</th></tr>
+<tr><th>Function</th><th>Purpose</th></tr>
 <tr><td>printf()</td><td>Displays (prints) output on the screen</td></tr>
-<tr bgcolor="#f5f5dc"><td>scanf()</td><td>Reads (accepts) input from the keyboard</td></tr>
+<tr><td>scanf()</td><td>Reads (accepts) input from the keyboard</td></tr>
 <tr><td>getchar()</td><td>Reads a single character from the keyboard</td></tr>
-<tr bgcolor="#f5f5dc"><td>putchar()</td><td>Displays a single character on the screen</td></tr>
+<tr><td>putchar()</td><td>Displays a single character on the screen</td></tr>
 </table>
 
 <p><b>Example Program - Input and Output:</b></p>
@@ -533,13 +534,13 @@ to 19 characters plus the null terminator.</p>
 "Nepal" in the array at the same time.</p>
 
 <table border="1" cellpadding="6" cellspacing="0" width="90%">
-<tr bgcolor="#d2b48c"><th>Function</th><th>Purpose</th></tr>
+<tr><th>Function</th><th>Purpose</th></tr>
 <tr><td>strlen()</td><td>Finds the length of a string</td></tr>
-<tr bgcolor="#f5f5dc"><td>strcat()</td><td>Joins (concatenates) two strings</td></tr>
+<tr><td>strcat()</td><td>Joins (concatenates) two strings</td></tr>
 <tr><td>strcmp()</td><td>Compares two strings</td></tr>
-<tr bgcolor="#f5f5dc"><td>strrev()</td><td>Reverses a string</td></tr>
+<tr><td>strrev()</td><td>Reverses a string</td></tr>
 <tr><td>strcpy()</td><td>Copies one string into another</td></tr>
-<tr bgcolor="#f5f5dc"><td>strlwr()</td><td>Converts a string to lowercase</td></tr>
+<tr><td>strlwr()</td><td>Converts a string to lowercase</td></tr>
 <tr><td>strupr()</td><td>Converts a string to uppercase</td></tr>
 </table>
 
